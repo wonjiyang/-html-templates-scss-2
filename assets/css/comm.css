@@ -284,8 +284,15 @@ legend {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 420px;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 1280px) {
+  .wrap {
+    max-width: none;
+  }
+}
 .inner {
   max-width: 1280px;
   margin: 0 auto;
@@ -387,6 +394,7 @@ legend {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  cursor: pointer;
 }
 .gnb-wrap .label-burger .bar {
   transition: all 0.3s;
